@@ -1,0 +1,34 @@
+.nav-tab {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    color: #A18249;
+}
+
+.nav-tab.active {
+    border-bottom: 4px solid #019863;
+    color: #1C160C;
+}
+
+.nav-tab:not(.active) {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-tab:hover {
+    opacity: 0.9;
+}
+
+.nav-tab div,
+.nav-tab p {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-tab.active div,
+.nav-tab.active p {
+    color: #1C160C;
+}
+
+.nav-tab:not(.active) div,
+.nav-tab:not(.active) p {
+    color: #A18249;
+}
